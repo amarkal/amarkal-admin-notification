@@ -1,13 +1,13 @@
 {
-    "name": "askupa-software/wp-dynamic-css",
-    "description": "Render CSS using dynamic data from WordPress",
-    "type": "wordpress-plugin",
-    "keywords": ["wordpress","plugin","dynamic css","dynamic style"],
-    "homepage": "https://github.com/askupasoftware/wp-dynamic-css",
+    "name": "askupa-software/wp-dismissible-notice",
+    "description": "A dismissible admin notification handler WordPress",
+    "type": "wordpress",
+    "keywords": ["wordpress","notices","framework"],
+    "homepage": "https://github.com/askupasoftware/wp-dismissible-notice",
     "authors": [
         {
             "name": "Askupa Software",
-            "email": "contact@askupasoftware.com"
+            "email": "hello@askupasoftware.com"
         }
     ],
     "require": {
