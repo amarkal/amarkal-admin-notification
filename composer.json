@@ -1,6 +1,6 @@
 {
-    "name": "askupa-software/wp-dismissible-notice",
-    "description": "Add dismissible admin notifications to WordPress",
+    "name": "askupa-software/wp-admin-notification",
+    "description": "Add static/dismissible admin notifications to WordPress",
     "type": "wordpress",
     "keywords": ["wordpress","notices","framework"],
     "homepage": "https://github.com/askupasoftware/wp-dismissible-notice",
