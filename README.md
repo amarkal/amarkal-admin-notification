@@ -1,5 +1,5 @@
 # wp-admin-notification [![Build Status](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/badges/build.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/?branch=master) [![License](https://img.shields.io/badge/license-GPL--3.0%2B-red.svg)](https://raw.githubusercontent.com/askupasoftware/wp-admin-notification/master/LICENSE)
-**wp-admin-notification** lets you add static/dismissible notifications to the WordPress administrastion. Dismissible notifictions are permanently dismissed and will not show when the page reloads.
+**wp-admin-notification** lets you add static/dismissible notifications to the WordPress administrastion. Dismissible notifictions are permanently dismissed and will not show when the page reloads. For an in-depth tutorial, see [Adding Static/Dismissible Admin Notifications to WordPress](https://blog.askupasoftware.com/adding-staticdismissible-admin-notifications-wordpress/)
 
 ![wp-admin-notification - ](https://askupasoftware.com/wp-content/uploads/2014/01/wp-admin-notifications.gif)
 
