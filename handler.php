@@ -1,6 +1,6 @@
 <?php
 
-if(!class_exists('WP_Admin_Notifications'))
+if(!class_exists('WPAdminNotifications'))
 {
     class WPAdminNotifications
     {
