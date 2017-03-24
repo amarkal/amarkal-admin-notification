@@ -92,7 +92,6 @@ if(!class_exists('WPAdminNotifications'))
             add_action( 'admin_head', array( $this, 'render_script' ) );
             $this->dismissed_notices = get_option('wp_dismissed_notices');
             if( false === $this->dismissed_notices ) $this->dismissed_notices = array();
-            var_dump($this->dismissed_notices);
         }
         
         private function render_notification( $id, $n )
