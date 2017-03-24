@@ -27,13 +27,18 @@ if(!class_exists('WPAdminNotifications'))
             return static::$instance;
         }
         
+        public function init()
+        {
+            add_action( 'admin_notices', array( $this, 'render_notifications' ) );
+            add_action( 'network_admin_notices', array( $this, 'render_network_notifications' ) );
+            add_action( 'wp_ajax_dismiss_admin_notification', array( $this, 'dismiss_notification' ) );
+            add_action( 'admin_footer', array( $this, 'render_script' ) ); // Must be hooked to a late action hook
+            $this->dismissed_notices = get_option('wp_dismissed_notices');
+            if( false === $this->dismissed_notices ) $this->dismissed_notices = array();
+        }
+        
         public function register_notification( $handle, $options )
         {
-            if( 0 === count( $this->notifications ) )
-            {
-                $this->init();
-            }
-            
             if( !key_exists( $handle, $this->notifications ) )
             {
                 $this->notifications[$handle] = $options;
@@ -70,6 +75,7 @@ if(!class_exists('WPAdminNotifications'))
         
         public function render_script()
         {
+            if( 0 === count( $this->notifications ) ) return;
             ?>
             <script>
             jQuery(document).ready(function($){
@@ -82,16 +88,6 @@ if(!class_exists('WPAdminNotifications'))
             });
             </script>
             <?php
-        }
-        
-        private function init()
-        {
-            add_action( 'admin_notices', array( $this, 'render_notifications' ) );
-            add_action( 'network_admin_notices', array( $this, 'render_network_notifications' ) );
-            add_action( 'wp_ajax_dismiss_admin_notification', array( $this, 'dismiss_notification' ) );
-            add_action( 'admin_head', array( $this, 'render_script' ) );
-            $this->dismissed_notices = get_option('wp_dismissed_notices');
-            if( false === $this->dismissed_notices ) $this->dismissed_notices = array();
         }
         
         private function render_notification( $id, $n )

@@ -19,13 +19,23 @@ if( defined( 'WP_ADMIN_NOTIFICATION' ) ) return;
 define( 'WP_ADMIN_NOTIFICATION', true );
 
 /**
- * Require the handler class
+ * Require the handler class and initiate it:
  */
 require_once 'handler.php';
+if(!function_exists('_wp_admin_notification_init'))
+{
+    function _wp_admin_notification_init() 
+    {
+        $notifier = WPAdminNotifications::get_instance();
+        $notifier->init();
+    }
+    add_action( 'init', '_wp_admin_notification_init' );
+}
 
 if(!function_exists('wp_admin_notification'))
 {
     /**
+     * Register an admin notification.
      * 
      * @param type $handle
      * @param type $html
