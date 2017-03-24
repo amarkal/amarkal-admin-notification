@@ -19,8 +19,8 @@ $ composer require askupa-software/wp-admin-notification:dev-master
 Or simply add the following to your `composer.json` file:
 ```javascript
 "require": {
-     "askupa-software/wp-admin-notification": "dev-master"
- }
+    "askupa-software/wp-admin-notification": "dev-master"
+}
 ```
 And run the command 
 ```
@@ -28,6 +28,11 @@ $ composer install
 ```
 
 This will install the package in the directory `vendors/askupa-software/wp-admin-notification`.
+Now all you need to do is include the composer autoloader.
+
+```php
+require_once 'path/to/vendor/autoload.php';
+```
 
 ### Manually
 

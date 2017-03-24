@@ -19,14 +19,21 @@ if( defined( 'WP_ADMIN_NOTIFICATION' ) ) return;
 define( 'WP_ADMIN_NOTIFICATION', true );
 
 /**
- * Require the handler class and initiate it:
+ * Load required classes if not using composer
  */
-require_once 'handler.php';
+if( !class_exists('Composer\\Autoload\\ClassLoader') )
+{
+    require_once 'Notifications.php';
+}
+
+/**
+ * Initiate admin notifications
+ */
 if(!function_exists('_wp_admin_notification_init'))
 {
     function _wp_admin_notification_init() 
     {
-        $notifier = WPAdminNotifications::get_instance();
+        $notifier = Amarkal\Admin\Notifications::get_instance();
         $notifier->init();
     }
     add_action( 'init', '_wp_admin_notification_init' );
@@ -46,7 +53,7 @@ if(!function_exists('wp_admin_notification'))
      */
     function wp_admin_notification( $handle, $html, $type = 'success', $dismissible = false, $class = '', $network = false )
     {
-        $notifier = WPAdminNotifications::get_instance();
+        $notifier = Amarkal\Admin\Notifications::get_instance();
         $notifier->register_notification($handle, array(
             'dismissible'   => $dismissible,
             'class'         => $class,
@@ -60,6 +67,7 @@ if(!function_exists('wp_admin_notification'))
 if(!function_exists('wp_reset_admin_notification'))
 {
     /**
+     * Reset a dismissed admin notification.
      * 
      * @param string $handle
      */
