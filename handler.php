@@ -70,7 +70,7 @@ if(!class_exists('WPAdminNotifications'))
                 $this->dismissed_notices[] = $id;
                 update_option( 'wp_dismissed_notices', $this->dismissed_notices);
             }
-            die();
+            wp_die();
         }
         
         public function render_script()
