@@ -3,13 +3,18 @@
     "description": "Add static/dismissible admin notifications to WordPress",
     "type": "wordpress",
     "keywords": ["wordpress","notices","framework"],
-    "homepage": "https://github.com/askupasoftware/wp-dismissible-notice",
+    "homepage": "https://github.com/askupasoftware/wp-admin-notification",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Askupa Software",
             "email": "hello@askupasoftware.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/askupasoftware/wp-admin-notification/issues",
+        "source": "https://github.com/askupasoftware/wp-admin-notification"
+    },
     "require": {
         "php": ">=5.3.0"
     }
