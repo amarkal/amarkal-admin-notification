@@ -1,5 +1,5 @@
 # wp-admin-notification [![Build Status](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/badges/build.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/wp-admin-notification/?branch=master) [![License](https://img.shields.io/badge/license-GPL--3.0%2B-red.svg)](https://raw.githubusercontent.com/askupasoftware/wp-admin-notification/master/LICENSE)
-**wp-admin-notification** lets you add static/dismissible notifications to the WordPress administrastion. Dismissible notifictions are permanently dismissed and will not show when the page reloads. For an in-depth tutorial, see [Adding Static/Dismissible Admin Notifications to WordPress](https://blog.askupasoftware.com/adding-staticdismissible-admin-notifications-wordpress/)
+**wp-admin-notification** lets you add static/dismissible notifications to the WordPress administrastion. Dismissible notifications are permanently dismissed and will not show when the page reloads. For an in-depth tutorial, see [Adding Static/Dismissible Admin Notifications to WordPress](https://blog.askupasoftware.com/adding-staticdismissible-admin-notifications-wordpress/)
 
 ![wp-admin-notification - ](https://askupasoftware.com/wp-content/uploads/2014/01/wp-admin-notifications.gif)
 
@@ -49,7 +49,7 @@ This function is used to register a notification for a given handle. The handle 
 **Parameters**  
 * `$handle` (*String*) The notification's ID. Also used to permanently dismiss a dismissible notification. If a given handle has previously been registered, a PHP notice will be triggered.
 * `$html` (*String*)  The text/HTML content of the notification.
-* `$type` (*String*)  The notification's type. One of `error`, `notice`, `info`, `success`.
+* `$type` (*String*)  The notification's type. One of `error`, `warning`, `info`, `success`.
 * `$dismissible` (*Boolean*)  Whether to add a "dismiss" button to allow the user to permanently dismiss the notification.
 * `$class` (*String*)  An additional CSS class to be added to the notification for styling purposes.
 * `$network` (*Boolean*)  Whether to show this notification in the network administration as well. Uses the [network_admin_notices](https://codex.wordpress.org/Plugin_API/Action_Reference/network_admin_notices) hook internally.
