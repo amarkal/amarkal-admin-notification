@@ -33,8 +33,7 @@ class Notifications
         add_action( 'network_admin_notices', array( $this, 'render_network_notifications' ) );
         add_action( 'wp_ajax_dismiss_admin_notification', array( $this, 'dismiss_notification' ) );
         add_action( 'admin_footer', array( $this, 'render_script' ) ); // Must be hooked to a late action hook
-        $this->dismissed_notices = get_option('wp_dismissed_notices');
-        if( false === $this->dismissed_notices ) $this->dismissed_notices = array();
+        $this->dismissed_notices = get_site_option( 'wp_dismissed_notices', array() );
     }
 
     public function register_notification( $handle, $options )
@@ -68,9 +67,9 @@ class Notifications
         if( !in_array( $id, $this->dismissed_notices ) )
         {
             $this->dismissed_notices[] = $id;
-            update_option( 'wp_dismissed_notices', $this->dismissed_notices);
+            update_site_option( 'wp_dismissed_notices', $this->dismissed_notices);
         }
-        die();
+        wp_die();
     }
 
     public function render_script()

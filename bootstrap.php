@@ -73,7 +73,7 @@ if(!function_exists('wp_reset_admin_notification'))
      */
     function wp_reset_admin_notification( $handle )
     {
-        $dismissed = get_option( 'wp_dismissed_notices' );
+        $dismissed = get_site_option( 'wp_dismissed_notices', array() );
         $offset = 0;
         foreach($dismissed as $id)
         {
@@ -81,6 +81,6 @@ if(!function_exists('wp_reset_admin_notification'))
             $offset++;
         }
         array_splice( $dismissed, $offset, 1);
-        update_option( 'wp_dismissed_notices', $dismissed );
+        update_site_option( 'wp_dismissed_notices', $dismissed );
     }
 }
