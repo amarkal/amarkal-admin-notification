@@ -9,13 +9,11 @@
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 /**
- * Prevent loading the library more than once
+ * Load module functions. If this amarkal module has not been loaded, 
+ * functions.php will not return false.
  */
-if( defined( 'AMARKAL_ADMIN_NOTIFICATION' ) ) return;
-define( 'AMARKAL_ADMIN_NOTIFICATION', true );
-
-/**
- * Load required classes
- */
-require_once 'Notifications.php';
-require_once 'functions.php';
+if(false !== require_once 'functions.php')
+{
+    // Load required classes if not using composer
+    require_once 'Notifications.php';
+}

@@ -8,10 +8,5 @@
 // Prevent direct file access
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-/**
- * Prevent loading the library more than once
- */
-if( defined( 'AMARKAL_ADMIN_NOTIFICATION' ) ) return;
-define( 'AMARKAL_ADMIN_NOTIFICATION', true );
-
+// Load module functions
 require_once 'functions.php';

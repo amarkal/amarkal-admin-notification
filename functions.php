@@ -13,6 +13,12 @@
 // Prevent direct file access
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+/**
+ * Prevent loading the library more than once
+ */
+if( defined( 'AMARKAL_ADMIN_NOTIFICATION' ) ) return false;
+define( 'AMARKAL_ADMIN_NOTIFICATION', true );
+
 if(!function_exists('_amarkal_admin_notification_init'))
 {
     /**
