@@ -11,8 +11,8 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 /**
  * Prevent loading the library more than once
  */
-if( defined( 'WP_ADMIN_NOTIFICATION' ) ) return;
-define( 'WP_ADMIN_NOTIFICATION', true );
+if( defined( 'AMARKAL_ADMIN_NOTIFICATION' ) ) return;
+define( 'AMARKAL_ADMIN_NOTIFICATION', true );
 
 /**
  * Load required classes
