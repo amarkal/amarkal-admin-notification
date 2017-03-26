@@ -1,7 +1,7 @@
 # amarkal-admin-notification [![Build Status](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/badges/build.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/?branch=master) [![License](https://img.shields.io/badge/license-GPL--3.0%2B-red.svg)](https://raw.githubusercontent.com/askupasoftware/amarkal-admin-notification/master/LICENSE)
 **amarkal-admin-notification** lets you add static/dismissible notifications to the WordPress administration. Dismissible notifications are permanently dismissed and will not show when the page reloads. For an in-depth tutorial, see [Adding Static/Dismissible Admin Notifications to WordPress](https://blog.askupasoftware.com/adding-staticdismissible-admin-notifications-wordpress/)
 
-![amarkal-admin-notification - ](https://askupasoftware.com/wp-content/uploads/2014/01/amarkal-admin-notifications.gif)
+![amarkal-admin-notification - ](https://askupasoftware.com/wp-content/uploads/2014/01/wp-admin-notifications.gif)
 
 ## Overview
 **amarkal-admin-notification** lets you easily add notifications to the WordPress administration with different options to choose from. In WordPress 4.2 [dismissible notifications became supported](https://make.wordpress.org/core/2015/04/23/spinners-and-dismissible-admin-notices-in-4-2/). However, a dismissed notification becomes visible again when the user refreshes the page or navigates away. **amarkal-admin-notification** handles that by storing an option in the database once a notification is dismissed.  
