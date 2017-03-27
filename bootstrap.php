@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
  * Load module functions. If this amarkal module has not been loaded, 
  * functions.php will not return false.
  */
-if(false !== require_once 'functions.php')
+if(false !== (require_once 'functions.php'))
 {
     // Load required classes if not using composer
     require_once 'Notifications.php';
