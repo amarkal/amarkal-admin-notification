@@ -6,7 +6,7 @@
  *
  * @package   amarkal-admin-notification
  * @author    Askupa Software <hello@askupasoftware.com>
- * @link      https://github.com/askupasoftware/amarkal-admin-notification
+ * @link      https://github.com/amarkal/amarkal-admin-notification
  * @copyright 2017 Askupa Software
  */
 

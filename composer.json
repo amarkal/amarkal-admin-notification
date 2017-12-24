@@ -3,7 +3,7 @@
     "description": "Add static/dismissible admin notifications to WordPress",
     "type": "wordpress",
     "keywords": ["wordpress","notices","framework"],
-    "homepage": "https://github.com/askupasoftware/amarkal-admin-notification",
+    "homepage": "https://github.com/amarkal/amarkal-admin-notification",
     "license": "GPL-3.0",
     "authors": [
         {
@@ -12,8 +12,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/askupasoftware/amarkal-admin-notification/issues",
-        "source": "https://github.com/askupasoftware/amarkal-admin-notification"
+        "issues": "https://github.com/amarkal/amarkal-admin-notification/issues",
+        "source": "https://github.com/amarkal/amarkal-admin-notification"
     },
     "require": {
         "php": ">=5.3.0"

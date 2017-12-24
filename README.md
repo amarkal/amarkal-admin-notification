@@ -1,4 +1,4 @@
-# amarkal-admin-notification [![Build Status](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/badges/build.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/askupasoftware/amarkal-admin-notification/?branch=master) [![License](https://img.shields.io/badge/license-GPL--3.0%2B-red.svg)](https://raw.githubusercontent.com/askupasoftware/amarkal-admin-notification/master/LICENSE)
+# amarkal-admin-notification [![Build Status](https://scrutinizer-ci.com/g/amarkal/amarkal-admin-notification/badges/build.png?b=master)](https://scrutinizer-ci.com/g/amarkal/amarkal-admin-notification/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/amarkal/amarkal-admin-notification/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/amarkal/amarkal-admin-notification/?branch=master) [![License](https://img.shields.io/badge/license-GPL--3.0%2B-red.svg)](https://raw.githubusercontent.com/amarkal/amarkal-admin-notification/master/LICENSE)
 **amarkal-admin-notification** lets you add static/dismissible notifications to the WordPress administration. Dismissible notifications are permanently dismissed and will not show when the page reloads. For an in-depth tutorial, see [Adding Static/Dismissible Admin Notifications to WordPress](https://blog.askupasoftware.com/adding-staticdismissible-admin-notifications-wordpress/)
 
 ![amarkal-admin-notification - ](https://askupasoftware.com/wp-content/uploads/2014/01/wp-admin-notifications.gif)
@@ -36,7 +36,7 @@ require_once 'path/to/vendor/autoload.php';
 
 ### Manually
 
-[Download the package](https://github.com/askupasoftware/amarkal-admin-notification/archive/master.zip) from github and include `bootstrap.php` in your project:
+[Download the package](https://github.com/amarkal/amarkal-admin-notification/archive/master.zip) from github and include `bootstrap.php` in your project:
 
 ```php
 require_once 'path/to/amarkal-admin-notification/bootstrap.php';
